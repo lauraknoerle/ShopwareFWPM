@@ -1,0 +1,54 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/5.6/engine/Shopware/Components/Plugin/schema/plugin.xsd">
+    <!-- Allgemeine Plugin-Informationen -->
+    <name>Lauras Voice Search Integration</name>
+    <label lang="en">Voice Search Integration</label>
+    <version>1.0.0</version>
+    <link>xxxx</link>
+    <author>Laura Knörle</author>
+    <description>Shopware Voice Search Integration Plugin</description>
+    <minimumShopwareVersion>5.6.0</minimumShopwareVersion>
+    <compatibility minVersion="5.6.0"/>
+    
+    <!-- Einstellungsmenü für das Shopware-Backend -->
+    <menu>
+        <label>Settings</label>
+        <class>sprite-cog</class>
+        <action>index</action>
+        <active>1</active>
+    </menu>
+
+    <!-- Konfigurationsoptionen für API-Zugangsdaten -->
+    <fields>
+        <!-- API Key für die Google Cloud API -->
+        <textfield>
+            <name>google_api_key</name>
+            <label lang="en">Google API Key</label>
+            <supportText lang="en">Enter your Google Cloud API key.</supportText>
+            <scope>shop</scope>
+        </textfield>
+
+        <!-- Projekt-ID für die Google Cloud -->
+        <textfield>
+            <name>google_project_id</name>
+            <label lang="en">Google Project ID</label>
+            <supportText lang="en">Enter your Google Cloud Project ID.</supportText>
+            <scope>shop</scope>
+        </textfield>
+
+        <!-- Client Email für die Google Cloud -->
+        <textfield>
+            <name>google_client_email</name>
+            <label lang="en">Google Client Email</label>
+            <supportText lang="en">Enter your Google Cloud Client Email.</supportText>
+            <scope>shop</scope>
+        </textfield>
+
+        <!-- Privater Schlüssel für die Google Cloud -->
+        <textfield>
+            <name>google_private_key</name>
+            <label lang="en">Google Private Key</label>
+            <supportText lang="en">Enter your Google Cloud Private Key.</supportText>
+            <scope>shop</scope>
+        </textfield>
+    </fields>
+</config>

@@ -1,0 +1,15 @@
+#voiceSearchButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#voiceSearchButton img {
+    width: 24px;
+    height: 24px;
+}
+
+#voiceSearchButton.listening img {
+    opacity: 0.5;
+}
